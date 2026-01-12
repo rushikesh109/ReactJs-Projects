@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+:root{
+  background-color: black;
+}
+.card{
+  color: aqua;
+  text-align: center;
+  background-color: red;
+  margin:20px;
+  padding:20px;
+}
