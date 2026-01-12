@@ -7,17 +7,15 @@ const Card = (props) => {
       <div className="card">
         <div>
           <div className="top">
-            <img
-              src={props.brandLogo}
-              alt=""
-            />
+            <img src={props.brandLogo} alt="" />
             <button>
               Save <Bookmark />
             </button>
           </div>
           <div className="center">
             <h3>
-             {props.company}<span>  {props.datePosted}</span>
+              {props.company}
+              <span> {props.datePosted}</span>
             </h3>
             <h2>{props.post}</h2>
             <div className="tag">
