@@ -1,0 +1,106 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Page background */
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main container */
+.app {
+  background-color: #ffffff;
+  padding: 2.5rem;
+  border-radius: 18px;
+  width: 350px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Heading */
+.app h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+  /* display: contents; */
+}
+
+/* Buttons wrapper */
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+   gap:10px;
+}
+
+/* Base button style */
+button {
+  padding: 0.75rem;
+  gap:10px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  font-weight: 600;
+}
+
+/* Individual button colors */
+.increase {
+  background-color: #4caf50;
+  color: white;
+}
+
+.decrease {
+  background-color: #f44336;
+  color: white;
+}
+
+.increase5 {
+  background-color: #2196f3;
+  color: white;
+}
+
+.decrease5 {
+  background-color: #ff9800;
+  color: white;
+}
+
+/* Hover effects */
+button:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Click effect */
+button:active {
+  transform: scale(0.95);
+}
+
+/* Disabled look */
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
