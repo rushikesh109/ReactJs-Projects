@@ -1,19 +1,51 @@
-import React from 'react'
+// import React from 'react'
+
+// const App = () => {
+
+//   const submitHandler = (e) => {
+//     e.preventDefault()
+//     console.log("form submitted");
+    
+//   }
+//   return (
+//     <div>
+//       <form onSubmit= {(e) => {
+//         submitHandler(e)
+//       }} action="" >
+//         <input type="text" placeholder='Enter Your Name' />
+//       <button>Submit</button>
+//       </form>
+//     </div>
+//   )
+// }
+
+// export default App
+
+import React, { useState } from 'react'
 
 const App = () => {
 
-  const submitHandler = (e) => {
+  const [title, setTitle] = useState('')
+
+  const submitHandler =(e) =>{
     e.preventDefault()
-    console.log("form submitted");
-    
+    console.log("Form submitted by" ,title);
+    setTitle('')
   }
   return (
     <div>
-      <form onSubmit= {(e) => {
+      <form onSubmit={(e) => {
         submitHandler(e)
-      }} action="" >
-        <input type="text" placeholder='Enter Your Name' />
-      <button>Submit</button>
+      }}>
+     <input type='text' placeholder='enter your name'
+     value={title}
+     onChange={(e)=>{
+      setTitle(e.target.value)
+     }}
+     >
+
+     </input>
+     <button>submit</button>
       </form>
     </div>
   )
