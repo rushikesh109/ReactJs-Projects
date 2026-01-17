@@ -26,3 +26,7 @@ console.log(get);
 }
 
 export default App
+
+
+//localstorge has four main method setItem to add item , getItem to retrive item then removeItem to remove particular thing and last one is clear to clear all..
+//and if you want to store the object then user JSON.Stringyfy to store and for retriving or we can say for writing we need to write JSON.parse so it convert string of object cause localstorage store in key-value pair and also it only store in string format 
