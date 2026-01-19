@@ -1,14 +1,49 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'helvetica neue';
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: black;
+}
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 100px;
+    white-space: nowrap;
+    text-decoration: underline;
+}
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: rgba(11, 206, 196, 0.733);
+}
+
+.nav div{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+h4{
+position:absolute;
+    top: 90%;
+    left: 0%;
+    /* transform: translate(-50%,-50%);   */
+    font-size: 50px;
+    white-space: nowrap;
+    text-decoration: underline;
+    text-align: center;
 }
