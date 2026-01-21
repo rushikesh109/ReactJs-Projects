@@ -1,0 +1,13 @@
+body{
+    background-color: saddlebrown;
+}
+
+button{
+    background-color: rgb(0, 17, 255);
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-wrap: initial;
+    color: white
+}
