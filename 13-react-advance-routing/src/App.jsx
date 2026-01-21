@@ -10,14 +10,20 @@ import Product from "./pages/Product";
 import Men from "./pages/Men";
 import Women from "./pages/Women";
 import Kids from "./pages/Kids";
+import Courses from "./pages/Courses";
+import CourseDetails from "./pages/CourseDetails";
+import Navbar1 from "./components/Navbar1";
 
 const App = () => {
   return (
     <div className="h-screen bg-black text-white">
       <Navbar />
+      <Navbar1 />
       <Footer />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path = "/courses" element={<Courses/>} />
+        <Route path= "courses/:id" element={<CourseDetails />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/product" element={<Product />}>
